@@ -9,6 +9,13 @@
 b. Add new profile to Volume, Add Override->Bloom, Check Threshold, Intensity, Scatter, Tint, Dirt Texture and Dirt Intensity, change Intensity to 12, Tint Color Orange, other as you like.
 4. Add anything to your Scene (2D or 3D Object), Create new Marital-> change Base Map and Emission Map HDR Color.
 
+## 2D Randerer insted of 3D Randerer
+After installation URP on your 2D project, you used to create an UniversalRenderPipelineAsset, when you create this asset files its automatically create a Renderer, which is useful for 3D project but not in 2D project, in the 2D project you have to also create a 2D Renderer from Create->Rendering->URP-> 2D Render. Now replace default Renderer by this brand new 2D Rander to your UniversalRenderPipelineAsset, Now Add this asset to your project graphics [Edit->Project Setting->Graphics->Scriptable RP Settings(select the asset)] 
+
+![Details](https://answers.unity.com/questions/1719967/cant-use-urp-2d-lights.html?childToView=1806547#answer-1806547)
+
+
+
 ## Add Light
 When you add URP to your project, its turns your games elements into black or magenta because its use Default Materials, To Fix this add 2D light from Asset->Light->2D Light->Global Light. Go to Edit->Renderer Pipeline->URP-> Upgrade Project Material to URP Material, it will change your Material to Lit Material.
 
